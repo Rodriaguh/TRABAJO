@@ -3,90 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AOT • Sistema de Inteligencia Táctica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Orbitron:wght@400;700&family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Garval</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <div class="scout-grid-overlay"></div>
-    <div class="ambient-glow"></div>
+    <header class="banner"> 
 
-    <nav class="banner">
-        <div class="banner-top">
-            <div class="logo-container">
-                <img src="https://cdn.prod.website-files.com/64ea57571d50b02423c4505d/64fa2af723cae8e0aa0e0101_attack%20on%20titan%20logo.png" alt="AOT" class="banner-logo">
-            </div>
-            <div class="system-status">
-                <span class="pulse-dot"></span>
-                <span class="status-text">SISTEMA ACTIVO • DISTRITO SHIGANSHINA</span>
-            </div>
+        <div class="Contenido">
+            <h1>Garval</h1> 
+            
+            <nav class="navegacion">
+                <a href="#quienes-somos" class="enlace boton-Quienesomos">QUIÉNES SOMOS</a>
+                <a href="#servicios" class="enlace boton-servicios">SERVICIOS</a>
+                <a href="#horarios" class="enlace boton-horarios">HORARIOS</a>
+                <a href="#contacto" class="enlace boton-contacto">CONTACTO</a>
+            </nav>
+
         </div>
-        <div id="particles"></div>
 
-        <div class="buttons-grid"> 
-            <button class="btn-tactical active" onclick="irAlInicio()">
-                <span class="btn-icon">🏠</span> BASE DE DATOS
-            </button>
-            <button class="btn-tactical" onclick="cargarApi(event)" name="characters">
-                <span class="btn-icon">👤</span> PERSONAJES
-            </button>
-            <button class="btn-tactical" onclick="cargarApi(event)" name="titans">
-                <span class="btn-icon">👹</span> TITANES
-            </button>
-            <button class="btn-tactical" onclick="cargarApi(event)" name="locations">
-                <span class="btn-icon">📍</span> REGIONES
-            </button>
-            <button class="btn-tactical" onclick="cargarApi(event)" name="episodes">
-                <span class="btn-icon">📖</span> BITÁCORAS
-            </button>
-            <button class="btn-tactical" onclick="cargarApi(event)" name="organizations">
-                <span class="btn-icon">🛡️</span> FACCIONES
-            </button>
-        </div>
-    </nav>
+    </header> 
 
-    <main class="contenedor-principal">
+    <main class="CONTENEDOR-PRINCIPAL">     
         
-        <section class="home-section" id="home">
-            <div class="tactical-header">
-                <span class="scout-serial">REF: REGISTRO-ANIME-2026</span>
-                <h1 class="main-title">ARCHIVOS CLASIFICADOS</h1>
-                <p class="main-subtitle">Acceso exclusivo para el cuerpo de exploración. Datos recopilados del mundo exterior.</p>
-            </div>
+        <section id="quienes-somos" class="seccion-bloque">
+            <h2>Quiénes Somos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis, molestiae rerum assumenda tempora ducimus facilis expedita nisi veritatis animi incidunt in qui culpa exercitationem distinctio ipsum ipsa voluptates commodi.</p>
+        </section>
 
-            <div class="walls-monitor">
-                <h2 class="panel-title">MONITOR DE LAS MURALLAS</h2>
-                <div class="walls-grid">
-                    <div class="wall-card">
-                        <div class="wall-info"><span>WALL MARIA</span><span class="status-good">COMPLETA</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-                    </div>
-                    <div class="wall-card">
-                        <div class="wall-info"><span>WALL ROSE</span><span class="status-good">COMPLETA</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-                    </div>
-                    <div class="wall-card">
-                        <div class="wall-info"><span>WALL SINA</span><span class="status-good">COMPLETA</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-                    </div>
+        <section id="servicios" class="seccion-bloque">
+            <h2>Nuestros Servicios</h2>
+
+            <div class="servicios-grid">
+                <div class="tarjeta-servicio">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur cum, sunt earum fugit inventore quisquam voluptatibus repellat quam est eligendi soluta dolore totam hic ratione ad facere, nostrum aliquid.</p>
+                </div>
+
+
+                <div class="tarjeta-servicio">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit, magnam animi sed sunt aut laboriosam sequi vel maiores suscipit inventore quos reiciendis modi sapiente perspiciatis vero dolorum at sint!</p>
                 </div>
             </div>
         </section>
 
-        <div id="panelHerramientas" class="tools-panel" style="display: none;">
-            <input type="text" id="buscador" placeholder="Filtrar registros en tiempo real..." oninput="filtrarTarjetas()">
-            <button class="btn-filter" onclick="ordenarTarjetas()">🔤 Ordenar A-Z</button>
-        </div>
 
-        <section id="resultado" class="grid-resultados"></section>
+        <section id="horarios" class="seccion-bloque">
+            <h2>Horarios de Atención</h2>
+            <p>Lunes a Viernes: 09:00 - 20:00 hs</p>
+            <p>Sábados: 09:00 - 14:00 hs</p>
+        </section>
+
+
+        <section id="contacto" class="seccion-bloque">
+            <h2>Contacto</h2>
+            <p>¡Agenda tu turno hoy mismo!</p>
+            <p>Teléfono / WhatsApp: +54 11 XXXX-XXXX</p>
+            <p>Dirección: Calle Falsa 123, Ciudad</p>
+        </section>
+
     </main>
 
-    <button id="btnVolverArriba" class="btn-scroll-top" onclick="subirAlInicio()">
-        <span class="arrow">↑</span>
-        <span class="hover-text">SUBIR</span>
-    </button>
-
-    <script src="style.js"></script>
+    <footer class="footer">
+        <img src="IMAGENES/Commons_QR_code.png" alt="Código QR de Garval">
+    </footer>
 </body>
 </html>
