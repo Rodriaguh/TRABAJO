@@ -57,10 +57,14 @@ body {
     background-color: #e0e0e0;
 }
 
-.boton-contacto {
-    background-color: aqua;
-    color: black; /* Cambiado a negro para mejor lectura sobre el aqua */
-    font-weight: bold;
+/* Cuando pasan el mouse por los botones grises */
+.enlace:hover {
+    background-color: #d4d4d4; 
+}
+
+/* Para el botón de contacto que es aqua (puedes oscurecerlo un poquito) */
+.boton-contacto:hover {
+    background-color: #00e5e5; 
 }
 
 /* --- CONTENIDO PRINCIPAL Y SECCIONES --- */
@@ -81,26 +85,29 @@ body {
 /* --- GRID DE SERVICIOS (Columnas) --- */
 .servicios-grid {
     display: flex;
-    gap: 20px; /* Espacio entre las dos tarjetas */
+    flex-wrap: wrap; /* <- Permite que las tarjetas se apilen en celulares */
+    gap: 20px;
 }
 
 .tarjeta-servicio {
-    flex: 1; /* Hace que ambas tarjetas midan exactamente lo mismo */
+    flex: 1 1 300px; /* <- Crece y se achica, pero intenta no medir menos de 300px */
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 6px;
-    border-left: 4px solid aqua; /* Detalle estético en el borde */
+    border-left: 4px solid aqua; 
 }
 
-/* --- FOOTER --- */
 .footer {
     background-color: #122c54;
+    border-top: 5px solid #B98A32;
+    color: #ffffff; /* <- Agrega esto para que el texto sea blanco */
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     margin-top: 50px;
 }
 
-.footer img {
-    max-width: 150px; /* Controla el tamaño del código QR */
-    height: auto;
+/* Si pones enlaces de redes sociales dentro del footer: */
+.footer a {
+    color: #B98A32; /* Las redes en dorado se verían increíbles */
+    text-decoration: none;
 }
