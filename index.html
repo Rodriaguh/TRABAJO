@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garval</title>
+    <title>Garval - Medicina Estética</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   
     <header class="banner"> 
-
         <div class="Contenido">
             <h1>Garval</h1> 
-            
+            <img src="IMAGENES/ejemploimagen.png" alt="logobanner" class="LOGOBANNER">
             <nav class="navegacion">
                 <a href="#quienes-somos" class="enlace boton-Quienesomos">QUIÉNES SOMOS</a>
                 <a href="#servicios" class="enlace boton-servicios">SERVICIOS</a>
                 <a href="#horarios" class="enlace boton-horarios">HORARIOS</a>
                 <a href="#contacto" class="enlace boton-contacto">CONTACTO</a>
             </nav>
-
         </div>
-
     </header> 
-    
+
+    <section class="presentacion"> 
+        <div class="presentacion-texto">
+            <h1>Bienvenido a Garval</h1>
+            <p>Medicina Estética & Bienestar</p>
+            <a href="#contacto" class="boton-cta">Agendar una Cita</a>
+        </div>
+        <img src="IMAGENES/ejemploimagen.png" alt="logo" class="presentacion-img">
+    </section>
 
     <main class="CONTENEDOR-PRINCIPAL">     
         
@@ -34,26 +39,145 @@
 
         <section id="servicios" class="seccion-bloque">
             <h2>Nuestros Servicios</h2>
-
-            <div class="servicios-grid">
-                <div class="tarjeta-servicio">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur cum, sunt earum fugit inventore quisquam voluptatibus repellat quam est eligendi soluta dolore totam hic ratione ad facere, nostrum aliquid.</p>
+            
+            <div class="contenedor-tratamientos-unico">
+                
+                <div class="categoria-tratamiento cat-modelado">
+                    <h3>⚡ Modelado y Contorno Corporal</h3>
+                    <div class="servicios-grid">
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Lipólisis Química</h3>
+                                <p>Chau grasa localizada. Microinyecciones que disuelven los rollitos rebeldes que no salen con gimnasia.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Lipólisis Química" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Tratamiento de Celulitis</h3>
+                                <p>Piel más firme y lisa. Combina tecnología y mesoterapia para eliminar la piel de naranja.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Tratamiento de Celulitis" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Estrías</h3>
+                                <p>Borrón y cuenta nueva. Renovación celular profunda para disimular marcas y unificar la textura de la piel.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Estrías" class="tarjeta-img">
+                        </div>
+                    </div>
                 </div>
 
-
-                <div class="tarjeta-servicio">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit, magnam animi sed sunt aut laboriosam sequi vel maiores suscipit inventore quos reiciendis modi sapiente perspiciatis vero dolorum at sint!</p>
+                <div class="categoria-tratamiento cat-hidratacion">
+                    <h3>✨ Hidratación y Nutrición Profunda</h3>
+                    <div class="servicios-grid">
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Skinbooster</h3>
+                                <p>El shot de hidratación definitivo. Ácido hialurónico inyectable que devuelve la luminosidad y el aspecto fresco al instante.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Skinbooster" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Mesoterapia</h3>
+                                <p>Nutrición a la medida de tu piel. Cócteles de vitaminas y aminoácidos para revivir el rostro o el cuerpo desde adentro.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Mesoterapia" class="tarjeta-img">
+                        </div>
+                    </div>
                 </div>
+
+                <div class="categoria-tratamiento cat-rejuvenecimiento">
+                    <h3>⏳ Rejuvenecimiento y Antiavejez</h3>
+                    <div class="servicios-grid">
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Toxina Botulínica</h3>
+                                <p>Adiós a la mirada cansada. Relaja los músculos para suavizar y prevenir arrugas de expresión manteniendo tu naturalidad.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Toxina Botulínica" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Rellenos (Fillers)</h3>
+                                <p>Volumetría y juventud. Ácido hialurónico para destacar pómulos, redefinir labios y reponer el volumen perdido.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Rellenos" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Arrugas</h3>
+                                <p>Plan de choque personalizado. Combinación de técnicas médicas para borrar las líneas del tiempo y suavizar la piel.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Arrugas" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Rejuvenecimiento Facial</h3>
+                                <p>Tu mejor versión. Protocolos integrales que combinan frescura, brillo y juventud en un solo tratamiento.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Rejuvenecimiento Facial" class="tarjeta-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria-tratamiento cat-firmeza">
+                    <h3>📐 Firmeza y Sustentación</h3>
+                    <div class="servicios-grid">
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Hilos Tensores</h3>
+                                <p>El lifting sin cirugía. Hilos biocompatibles que levantan los tejidos caídos y estimulan tu propio colágeno.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Hilos Tensores" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Flacidez</h3>
+                                <p>Recuperá la estructura de tu piel. Tratamientos enfocados en devolver la elasticidad y firmeza perdidas.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Flacidez" class="tarjeta-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria-tratamiento cat-renovacion">
+                    <h3>🧼 Renovación y Calidad de Piel</h3>
+                    <div class="servicios-grid">
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Protocolos de Peeling</h3>
+                                <p>Renovación celular total. Exfoliación médica que elimina capas dañadas para lucir una piel nueva, suave y radiante.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Protocolos de Peeling" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Acné</h3>
+                                <p>Control y claridad. Tratamientos médicos para frenar brotes, regular la grasitud y limpiar la piel en profundidad.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Acné" class="tarjeta-img">
+                        </div>
+                        <div class="tarjeta-servicio">
+                            <div class="tarjeta-info">
+                                <h3>Manchas</h3>
+                                <p>Tono uniforme y sin imperfecciones. Tecnología y peeling específicos para aclarar la piel y devolverle su luz natural.</p>
+                            </div>
+                            <img src="IMAGENES/ejemploimagen.png" alt="Manchas" class="tarjeta-img">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
-
 
         <section id="horarios" class="seccion-bloque">
             <h2>Horarios de Atención</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat impedit laudantium officiis sint ex nihil dignissimos exercitationem recusandae iusto perspiciatis inventore esse temporibus, adipisci cumque aliquam vitae error veritatis quia.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nam aliquam neque sequi, doloremque blanditiis aliquid magnam sapiente reiciendis odio, laboriosam dignissimos incidunt delectus commodi similique dolorum corporis provident obcaecati?</p>
         </section>
-
 
         <section id="contacto" class="seccion-bloque">
             <h2>Contacto</h2>
@@ -66,6 +190,25 @@
 
     <footer class="footer">
         <img src="IMAGENES/Commons_QR_code.png" alt="Código QR de Garval">
+        <p>&copy; 2026 Garval Medicina Estética. Todos los derechos reservados.</p>
+        <div class="redes">
+            <a href="#">Instagram</a> | <a href="#">Facebook</a>
+        </div>
     </footer>
+
+    <a href="https://wa.me/541100000000?text=Hola,%20deseo%20más%20información" class="btn-whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <div id="modal-turno" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <img src="IMAGENES/Commons_QR_code.png" alt="QR Turnos" class="qr-modal">
+            <p class="texto-modal">Agende escaneando este QR o agréganos por WhatsApp</p>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+
 </body>
 </html>
